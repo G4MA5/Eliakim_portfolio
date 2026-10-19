@@ -1,0 +1,993 @@
+[data-v-9e2000d7]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-9e2000d7] {
+  font-family: "Lato";
+}
+.extra-light[data-v-9e2000d7] {
+  font-weight: 200;
+}
+.light[data-v-9e2000d7] {
+  font-weight: 300;
+}
+.normal[data-v-9e2000d7] {
+  font-weight: 400;
+}
+.medium[data-v-9e2000d7] {
+  font-weight: 500;
+}
+.semi-bold[data-v-9e2000d7] {
+  font-weight: 600;
+}
+.bold[data-v-9e2000d7] {
+  font-weight: 700;
+}
+.extra-bold[data-v-9e2000d7] {
+  font-weight: 800;
+}
+[data-v-9e2000d7]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-9e2000d7] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-9e2000d7] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-9e2000d7] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-9e2000d7] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-9e2000d7] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-9e2000d7] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-9e2000d7] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-9e2000d7] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-9e2000d7] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-9e2000d7] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-9e2000d7] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-9e2000d7] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-9e2000d7] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-9e2000d7] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-9e2000d7] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-9e2000d7] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-9e2000d7] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-nec-log-grid[data-v-9e2000d7] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.log-toolbar[data-v-9e2000d7] {
+  border-bottom: 1px solid #e0e0e0;
+}
+.log-scroll[data-v-9e2000d7] {
+  flex: 1;
+  overflow-y: auto;
+}
+.log-item[data-v-9e2000d7] {
+  font-size: 13px;
+}
+.log-item.log-error[data-v-9e2000d7] {
+  background: #fff5f5;
+}
+.log-item.log-warning[data-v-9e2000d7] {
+  background: #fffbf0;
+}
+.log-item.log-information[data-v-9e2000d7] {
+  background: #f0f9ff;
+}
+.log-item.log-debug[data-v-9e2000d7] {
+  background: #f5f5f5;
+}[data-v-5641e330]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-5641e330] {
+  font-family: "Lato";
+}
+.extra-light[data-v-5641e330] {
+  font-weight: 200;
+}
+.light[data-v-5641e330] {
+  font-weight: 300;
+}
+.normal[data-v-5641e330] {
+  font-weight: 400;
+}
+.medium[data-v-5641e330] {
+  font-weight: 500;
+}
+.semi-bold[data-v-5641e330] {
+  font-weight: 600;
+}
+.bold[data-v-5641e330] {
+  font-weight: 700;
+}
+.extra-bold[data-v-5641e330] {
+  font-weight: 800;
+}
+[data-v-5641e330]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-5641e330] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-5641e330] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-5641e330] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-5641e330] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-5641e330] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-5641e330] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-5641e330] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-5641e330] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-5641e330] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-5641e330] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-5641e330] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-5641e330] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-5641e330] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-5641e330] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-5641e330] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-5641e330] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-5641e330] {
+    background: var(--q-color-app) !important;
+}
+}
+.synth-card[data-v-5641e330] {
+  min-height: 100px;
+}
+.synth-table[data-v-5641e330] .q-table__top,
+.synth-table[data-v-5641e330] .q-table__bottom {
+  padding: 0;
+}
+.synth-table[data-v-5641e330] thead tr th {
+  background-color: #fafafa;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 8px 12px;
+}
+.synth-table[data-v-5641e330] tbody tr td {
+  padding: 8px 12px;
+  font-size: 0.875rem;
+}
+.synth-table[data-v-5641e330] tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.synth-table[data-v-5641e330] tbody tr:hover {
+  background-color: #f0f0f0;
+}
+.synth-table[data-v-5641e330] .q-table__container {
+  max-height: 400px;
+}[data-v-69244935]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-69244935] {
+  font-family: "Lato";
+}
+.extra-light[data-v-69244935] {
+  font-weight: 200;
+}
+.light[data-v-69244935] {
+  font-weight: 300;
+}
+.normal[data-v-69244935] {
+  font-weight: 400;
+}
+.medium[data-v-69244935] {
+  font-weight: 500;
+}
+.semi-bold[data-v-69244935] {
+  font-weight: 600;
+}
+.bold[data-v-69244935] {
+  font-weight: 700;
+}
+.extra-bold[data-v-69244935] {
+  font-weight: 800;
+}
+[data-v-69244935]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-69244935] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-69244935] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-69244935] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-69244935] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-69244935] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-69244935] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-69244935] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-69244935] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-69244935] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-69244935] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-69244935] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-69244935] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-69244935] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-69244935] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-69244935] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-69244935] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-69244935] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-cedant-grid[data-v-69244935] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-996301a4]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-996301a4] {
+  font-family: "Lato";
+}
+.extra-light[data-v-996301a4] {
+  font-weight: 200;
+}
+.light[data-v-996301a4] {
+  font-weight: 300;
+}
+.normal[data-v-996301a4] {
+  font-weight: 400;
+}
+.medium[data-v-996301a4] {
+  font-weight: 500;
+}
+.semi-bold[data-v-996301a4] {
+  font-weight: 600;
+}
+.bold[data-v-996301a4] {
+  font-weight: 700;
+}
+.extra-bold[data-v-996301a4] {
+  font-weight: 800;
+}
+[data-v-996301a4]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-996301a4] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-996301a4] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-996301a4] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-996301a4] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-996301a4] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-996301a4] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-996301a4] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-996301a4] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-996301a4] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-996301a4] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-996301a4] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-996301a4] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-996301a4] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-996301a4] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-996301a4] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-996301a4] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-996301a4] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-debiteur-grid[data-v-996301a4] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-d3336e39]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-d3336e39] {
+  font-family: "Lato";
+}
+.extra-light[data-v-d3336e39] {
+  font-weight: 200;
+}
+.light[data-v-d3336e39] {
+  font-weight: 300;
+}
+.normal[data-v-d3336e39] {
+  font-weight: 400;
+}
+.medium[data-v-d3336e39] {
+  font-weight: 500;
+}
+.semi-bold[data-v-d3336e39] {
+  font-weight: 600;
+}
+.bold[data-v-d3336e39] {
+  font-weight: 700;
+}
+.extra-bold[data-v-d3336e39] {
+  font-weight: 800;
+}
+[data-v-d3336e39]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-d3336e39] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-d3336e39] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-d3336e39] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-d3336e39] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-d3336e39] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-d3336e39] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-d3336e39] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-d3336e39] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-d3336e39] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-d3336e39] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-d3336e39] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-d3336e39] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-d3336e39] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-d3336e39] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-d3336e39] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-d3336e39] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-d3336e39] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-doc-grid[data-v-d3336e39] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-e668191b]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-e668191b] {
+  font-family: "Lato";
+}
+.extra-light[data-v-e668191b] {
+  font-weight: 200;
+}
+.light[data-v-e668191b] {
+  font-weight: 300;
+}
+.normal[data-v-e668191b] {
+  font-weight: 400;
+}
+.medium[data-v-e668191b] {
+  font-weight: 500;
+}
+.semi-bold[data-v-e668191b] {
+  font-weight: 600;
+}
+.bold[data-v-e668191b] {
+  font-weight: 700;
+}
+.extra-bold[data-v-e668191b] {
+  font-weight: 800;
+}
+[data-v-e668191b]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-e668191b] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-e668191b] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-e668191b] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-e668191b] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-e668191b] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-e668191b] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-e668191b] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-e668191b] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-e668191b] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-e668191b] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-e668191b] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-e668191b] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-e668191b] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-e668191b] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-e668191b] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-e668191b] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-e668191b] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-file-grid[data-v-e668191b] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-c503a341]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-c503a341] {
+  font-family: "Lato";
+}
+.extra-light[data-v-c503a341] {
+  font-weight: 200;
+}
+.light[data-v-c503a341] {
+  font-weight: 300;
+}
+.normal[data-v-c503a341] {
+  font-weight: 400;
+}
+.medium[data-v-c503a341] {
+  font-weight: 500;
+}
+.semi-bold[data-v-c503a341] {
+  font-weight: 600;
+}
+.bold[data-v-c503a341] {
+  font-weight: 700;
+}
+.extra-bold[data-v-c503a341] {
+  font-weight: 800;
+}
+[data-v-c503a341]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-c503a341] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-c503a341] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-c503a341] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-c503a341] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-c503a341] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-c503a341] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-c503a341] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-c503a341] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-c503a341] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-c503a341] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-c503a341] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-c503a341] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-c503a341] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-c503a341] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-c503a341] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-c503a341] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-c503a341] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-grid[data-v-c503a341] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-128dcfb6]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-128dcfb6] {
+  font-family: "Lato";
+}
+.extra-light[data-v-128dcfb6] {
+  font-weight: 200;
+}
+.light[data-v-128dcfb6] {
+  font-weight: 300;
+}
+.normal[data-v-128dcfb6] {
+  font-weight: 400;
+}
+.medium[data-v-128dcfb6] {
+  font-weight: 500;
+}
+.semi-bold[data-v-128dcfb6] {
+  font-weight: 600;
+}
+.bold[data-v-128dcfb6] {
+  font-weight: 700;
+}
+.extra-bold[data-v-128dcfb6] {
+  font-weight: 800;
+}
+[data-v-128dcfb6]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-128dcfb6] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-128dcfb6] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-128dcfb6] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-128dcfb6] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-128dcfb6] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-128dcfb6] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-128dcfb6] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-128dcfb6] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-128dcfb6] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-128dcfb6] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-128dcfb6] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-128dcfb6] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-128dcfb6] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-128dcfb6] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-128dcfb6] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-128dcfb6] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-128dcfb6] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-info-client-grid[data-v-128dcfb6] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}[data-v-f1cbf311]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-f1cbf311] {
+  font-family: "Lato";
+}
+.extra-light[data-v-f1cbf311] {
+  font-weight: 200;
+}
+.light[data-v-f1cbf311] {
+  font-weight: 300;
+}
+.normal[data-v-f1cbf311] {
+  font-weight: 400;
+}
+.medium[data-v-f1cbf311] {
+  font-weight: 500;
+}
+.semi-bold[data-v-f1cbf311] {
+  font-weight: 600;
+}
+.bold[data-v-f1cbf311] {
+  font-weight: 700;
+}
+.extra-bold[data-v-f1cbf311] {
+  font-weight: 800;
+}
+[data-v-f1cbf311]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-f1cbf311] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-f1cbf311] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-f1cbf311] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-f1cbf311] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-f1cbf311] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-f1cbf311] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-f1cbf311] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-f1cbf311] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-f1cbf311] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-f1cbf311] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-f1cbf311] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-f1cbf311] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-f1cbf311] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-f1cbf311] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-f1cbf311] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-f1cbf311] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-f1cbf311] {
+    background: var(--q-color-app) !important;
+}
+}
+.ctk-task-nec-view[data-v-f1cbf311] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+}
+.nec-tabs[data-v-f1cbf311] {
+  border-bottom: 1px solid #e0e0e0;
+}
+.nec-tab-panels[data-v-f1cbf311] {
+  flex: 1;
+  overflow: hidden;
+}
+.nec-tab-panels[data-v-f1cbf311] .q-tab-panel {
+  overflow: auto;
+}
+.nec-form[data-v-f1cbf311] {
+  width: 100%;
+}
+.synth-panel[data-v-f1cbf311] {
+  padding: 0 !important;
+  overflow: hidden;
+}
+.synth-container[data-v-f1cbf311] {
+  display: flex;
+  height: 100%;
+  gap: 8px;
+  padding: 8px;
+}
+.synth-sections[data-v-f1cbf311] {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.synth-global[data-v-f1cbf311] {
+  width: 20%;
+  min-width: 250px;
+  overflow-y: auto;
+}
+.global-info[data-v-f1cbf311] {
+  display: flex;
+  flex-direction: column;
+}
+.global-item[data-v-f1cbf311] {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.global-item[data-v-f1cbf311]:last-child {
+  border-bottom: none;
+}

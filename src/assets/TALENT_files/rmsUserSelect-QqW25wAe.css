@@ -1,0 +1,99 @@
+:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01 {
+  font-family: "Lato";
+}
+.extra-light {
+  font-weight: 200;
+}
+.light {
+  font-weight: 300;
+}
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.extra-bold {
+  font-weight: 800;
+}
+:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app {
+  color: var(--q-color-app) !important;
+}
+.text-app-light {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app {
+  background: var(--q-color-app) !important;
+}
+.bg-layer {
+  background: var(--q-color-layer) !important;
+}
+.rms-border {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar {
+  background-color: var(--q-toolbar) !important;
+}
+.selected {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app {
+    background: var(--q-color-app) !important;
+}
+}
+.select-popup-above-dialog {
+  z-index: 10001 !important;
+}

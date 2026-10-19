@@ -1,0 +1,70 @@
+
+.vnc-dialog[data-v-f7edc770] {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.resize-handle-r[data-v-f7edc770] {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  bottom: 10px;
+  width: 10px;
+  cursor: ew-resize;
+  background: transparent;
+}
+.resize-handle-r[data-v-f7edc770]:hover {
+  background: rgba(33, 150, 243, 0.2);
+}
+.resize-handle-b[data-v-f7edc770] {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 10px;
+  cursor: ns-resize;
+  background: transparent;
+}
+.resize-handle-b[data-v-f7edc770]:hover {
+  background: rgba(33, 150, 243, 0.2);
+}
+.resize-handle-br[data-v-f7edc770] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nwse-resize;
+  background: transparent;
+}
+.resize-handle-br[data-v-f7edc770]:hover {
+  background: rgba(33, 150, 243, 0.2);
+}
+
+.full-height-container[data-v-407941ff] {
+  /* This height is crucial for the flex child to expand */
+  height: 50vh; /* Example: use the full viewport height */
+  display: flex;
+  flex-direction: column; /* Organizes children vertically */
+}
+
+/* This is often needed to correctly target the internal textarea */
+.q-field--textarea[data-v-407941ff] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Target the actual textarea element inside the q-input */
+.q-field--textarea .q-field__native[data-v-407941ff] {
+  flex-grow: 1; /* Makes the textarea itself take all space */
+  min-height: 400px; /* Keep your minimum height */
+}
+
+.dragging[data-v-3650eb21] {
+  opacity: 0.5;
+  background-color: #f0f0f0;
+}
+.drag-over[data-v-3650eb21] {
+  border-top: 2px solid #1976d2;
+}
+q-tr[draggable="true"][data-v-3650eb21] {
+  cursor: move;
+}

@@ -1,0 +1,159 @@
+[data-v-9fea9d47]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-9fea9d47] {
+  font-family: "Lato";
+}
+.extra-light[data-v-9fea9d47] {
+  font-weight: 200;
+}
+.light[data-v-9fea9d47] {
+  font-weight: 300;
+}
+.normal[data-v-9fea9d47] {
+  font-weight: 400;
+}
+.medium[data-v-9fea9d47] {
+  font-weight: 500;
+}
+.semi-bold[data-v-9fea9d47] {
+  font-weight: 600;
+}
+.bold[data-v-9fea9d47] {
+  font-weight: 700;
+}
+.extra-bold[data-v-9fea9d47] {
+  font-weight: 800;
+}
+[data-v-9fea9d47]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-9fea9d47] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-9fea9d47] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-9fea9d47] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-9fea9d47] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-9fea9d47] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-9fea9d47] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-9fea9d47] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-9fea9d47] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-9fea9d47] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-9fea9d47] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-9fea9d47] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-9fea9d47] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-9fea9d47] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-9fea9d47] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-9fea9d47] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-9fea9d47] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-9fea9d47] {
+    background: var(--q-color-app) !important;
+}
+}
+.kpi-expense-card[data-v-9fea9d47] {
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+.kpi-expense-card[data-v-9fea9d47]:hover {
+  transform: translateY(-2px);
+}
+.kpi-total[data-v-9fea9d47] {
+  background: linear-gradient(135deg, #5C6BC0 0%, #3949AB 100%);
+}
+.kpi-amount[data-v-9fea9d47] {
+  background: linear-gradient(135deg, #00897B 0%, #00695C 100%);
+}
+.kpi-approved[data-v-9fea9d47] {
+  background: linear-gradient(135deg, #43A047 0%, #2E7D32 100%);
+}
+.year-chip[data-v-9fea9d47] {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.year-chip[data-v-9fea9d47]:hover {
+  transform: translateY(-1px);
+}
+.search-input[data-v-9fea9d47] {
+  max-width: 260px;
+}
+.expense-table-card[data-v-9fea9d47] {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.expense-table[data-v-9fea9d47] .q-table__card {
+  box-shadow: none;
+}
+.expense-table[data-v-9fea9d47] thead th {
+  background: #f8f9fa;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #616161;
+}
+.expense-table[data-v-9fea9d47] tbody tr:hover {
+  background: #f5f7ff;
+}
+.ellipsis-text[data-v-9fea9d47] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.empty-state[data-v-9fea9d47] {
+  opacity: 0.8;
+}
+.documents-dialog[data-v-9fea9d47] {
+  border-radius: 12px;
+}
+.doc-item[data-v-9fea9d47] {
+  transition: background 0.15s ease;
+  border-radius: 8px;
+}
+.doc-item[data-v-9fea9d47]:hover {
+  background: #f5f7ff;
+}

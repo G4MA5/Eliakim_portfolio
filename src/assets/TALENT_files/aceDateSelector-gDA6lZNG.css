@@ -1,0 +1,141 @@
+[data-v-5da1164d]:root {
+  --ft-ibm-plex-mono: "IBM Plex Mono";
+  --ft-lato: "Lato";
+}
+.ft-family-01[data-v-5da1164d] {
+  font-family: "Lato";
+}
+.extra-light[data-v-5da1164d] {
+  font-weight: 200;
+}
+.light[data-v-5da1164d] {
+  font-weight: 300;
+}
+.normal[data-v-5da1164d] {
+  font-weight: 400;
+}
+.medium[data-v-5da1164d] {
+  font-weight: 500;
+}
+.semi-bold[data-v-5da1164d] {
+  font-weight: 600;
+}
+.bold[data-v-5da1164d] {
+  font-weight: 700;
+}
+.extra-bold[data-v-5da1164d] {
+  font-weight: 800;
+}
+[data-v-5da1164d]:root {
+  --q-color-app: #1976D2;
+  --q-color-app-light: #e8e8e8;
+  --q-color-layer: #F7F7F7;
+}
+.text-app[data-v-5da1164d] {
+  color: var(--q-color-app) !important;
+}
+.text-app-light[data-v-5da1164d] {
+  color: var(--q-color-app-light) !important;
+}
+.bg-app[data-v-5da1164d] {
+  background: var(--q-color-app) !important;
+}
+.bg-layer[data-v-5da1164d] {
+  background: var(--q-color-layer) !important;
+}
+.rms-border[data-v-5da1164d] {
+  border-left: 5px solid var(--q-color-app);
+}
+.body--dark[data-v-5da1164d] {
+  --q-app-selection: #393838;
+  --q-app-theme: var(--q-color-app, #e8e8e8);
+  --q-toolbar: #1D1D1D;
+}
+.body--light[data-v-5da1164d] {
+  --q-app-selection: #e4e4e4;
+  --q-app-theme: var(--q-color-app, #1976D2);
+  --q-toolbar: #FFFFFF;
+}
+.toolbar[data-v-5da1164d] {
+  background-color: var(--q-toolbar) !important;
+}
+.selected[data-v-5da1164d] {
+  background-color: var(--q-app-selection) !important;
+}
+@media (min-width: 600px) {
+.gt-sm--text-app[data-v-5da1164d] {
+    color: var(--q-color-app) !important;
+}
+.gt-sm--bg-app[data-v-5da1164d] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1024px) {
+.gt-md--text-app[data-v-5da1164d] {
+    color: var(--q-color-app) !important;
+}
+.gt-md--bg-app[data-v-5da1164d] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1440px) {
+.gt-lg--text-app[data-v-5da1164d] {
+    color: var(--q-color-app) !important;
+}
+.gt-lg--bg-app[data-v-5da1164d] {
+    background: var(--q-color-app) !important;
+}
+}
+@media (min-width: 1920px) {
+.gt-xl--text-app[data-v-5da1164d] {
+    color: var(--q-color-app) !important;
+}
+.gt-xl--bg-app[data-v-5da1164d] {
+    background: var(--q-color-app) !important;
+}
+}
+.date-selector[data-v-5da1164d] {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.date-selector[data-v-5da1164d]:hover {
+  border-color: var(--q-primary);
+}
+.date-selector[data-v-5da1164d] .q-btn__content {
+  justify-content: space-between;
+  width: 100%;
+}
+.year-container[data-v-5da1164d], .month-container[data-v-5da1164d] {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.year-btn[data-v-5da1164d] {
+  margin: 2px;
+  min-width: 60px;
+  transition: all 0.2s ease;
+}
+.year-btn[data-v-5da1164d]:hover {
+  transform: translateY(-1px);
+}
+.month-btn[data-v-5da1164d] {
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  height: 32px;
+}
+.month-btn[data-v-5da1164d]:hover {
+  transform: translateY(-1px);
+}
+.date-separator[data-v-5da1164d] {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  color: #666;
+  font-size: 0.9em;
+}
+[data-v-5da1164d] .q-btn-dropdown__arrow {
+  transition: transform 0.3s ease;
+}
+[data-v-5da1164d] .q-btn-dropdown--opened .q-btn-dropdown__arrow {
+  transform: rotate(180deg);
+}
