@@ -4,14 +4,12 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import SkeletonImage from './SkeletonImage';
 import projectImg from "../assets/student2.png";
 import projectImg1 from "../assets/genie5.png";
-// import projectImg2 from "../assets/test2.jpg";
 import projectImg3 from "../assets/cinevibe.png";
-
 
 interface ProjectData {
   id: number;
   name: string;
-  image: string;
+  image?: string;
   mission: string;
   role: string;
   techStack: string[];
@@ -37,18 +35,22 @@ const projects: ProjectData[] = [
     techStack: ["React", "Tailwind CSS", "TypeScript"],
     link: "/genieupb",
   },
-  /*
   {
     id: 3,
     name: "CLINIQUE LIFE",
-    image: projectImg2,
-    mission: "Concevoir une application web moderne pour la gestion des rendez-vous médicaux, le suivi des patients et la digitalisation des dossiers médicaux d'une clinique.",
-    role: "Développeur Full-Stack",
-    techStack: ["React", "Tailwind CSS", "TypeScript"],
+    mission: "Digitalisation des services d'un établissement de santé pour optimiser l'expérience des patients et la gestion du personnel. Développement d'interfaces réactives et accessibles (prise de rendez-vous en ligne interactive), conception d'un tableau de bord (dashboard) d'administration complet pour piloter l'activité au quotidien, et optimisation des performances et de l'accessibilité.",
+    role: "Dev Front-End & Chef de Projet",
+    techStack: ["React", "Tailwind CSS", "TypeScript", "UX/UI Design"],
   },
-  */
   {
     id: 4,
+    name: "ACORP GROUP",
+    mission: "Plateforme e-commerce moderne dédiée à la vente de matériel informatique et d'équipements technologiques, incluant un module de prise de rendez-vous en ligne pour les services de maintenance et de support technique.",
+    role: "Développeur Full-Stack",
+    techStack: ["React", "Tailwind CSS", "TypeScript", "Node.js"],
+  },
+  {
+    id: 5,
     name: "CINEVIBE",
     image: projectImg3,
     mission: "Développer CineVibe, une application mobile intuitive permettant de consulter les films à l'affiche et de réserver facilement des places de cinéma en temps réel.",
@@ -56,26 +58,6 @@ const projects: ProjectData[] = [
     techStack: ["Flutter"],
     link: "/cinevibe",
   },
-  
-   /*{
-    id: 5,
-    name: "IA STONE2.0",
-    image: projectImg,
-    mission: "Stone est un personnage interactif au caractère bien trempé, intégré dans mon portfolio. Il engage le visiteur à travers quelques questions, réagissant à chaque réponse avec des expressions faciales animées.",
-    role: "Développeur Front-End",
-    techStack: ["React (TypeScript)", "Framer Motion", "Tailwind CSS"],
-  },
-   */
-  /*
-  {
-    id: 6,
-    name: "PROJECT SIX",
-    image: projectImg,
-    mission: "Créer un écosystème numérique complet intégrant des fonctionnalités avancées de collaboration et de gestion de contenu.",
-    role: "Développeur Front-End",
-    techStack: ["React", "Tailwind CSS", "TypeScript"],
-  },
-  */
 ];
 
 const ProjectCard: React.FC<{ project: ProjectData; onOpen: (p: ProjectData) => void; isOpening: boolean }> = ({ project, onOpen, isOpening }) => {
@@ -95,9 +77,11 @@ const ProjectCard: React.FC<{ project: ProjectData; onOpen: (p: ProjectData) => 
           opacity: isOpening ? 0 : 1
         }}
       >
-        <h1 className="text-[32px] md:text-[38px] leading-tight font-black font-['Georgia',serif] uppercase tracking-tighter text-black flex justify-center items-center gap-2">
+        <h1 className="text-[26px] sm:text-[30px] md:text-[34px] leading-tight font-black font-['Georgia',serif] uppercase tracking-tighter text-black flex justify-center items-center gap-2">
           <span>{project.name.split(" ")[0]}</span>
-          {project.name.split(" ")[1] && <span>{project.name.split(" ")[1]}</span>}
+          {project.name.split(" ").slice(1).join(" ") && (
+            <span>{project.name.split(" ").slice(1).join(" ")}</span>
+          )}
         </h1>
       </div>
 
@@ -141,12 +125,34 @@ const ProjectCard: React.FC<{ project: ProjectData; onOpen: (p: ProjectData) => 
               WebkitMaskSize: '100% 100%'
             }}
           >
-             <SkeletonImage
-              src={project.image}
-              alt={project.name}
-              wrapperClassName="w-full h-full"
-              className="w-full h-full object-cover"
-            />
+            {project.image ? (
+              <SkeletonImage
+                src={project.image}
+                alt={project.name}
+                wrapperClassName="w-full h-full"
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-[#1E2024] via-[#2D2E32] to-[#121316] flex flex-col items-center justify-center text-center p-6 text-white select-none relative">
+                <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-2.5 border border-white/10 shadow-lg">
+                  {project.name.includes("CLINIQUE") ? (
+                    <span className="text-3xl">🏥</span>
+                  ) : project.name.includes("ACORP") ? (
+                    <span className="text-3xl">💻</span>
+                  ) : (
+                    <span className="text-2xl font-black text-[#FA8072]">
+                      {project.name.charAt(0)}
+                    </span>
+                  )}
+                </div>
+                <span className="text-sm font-bold tracking-wider uppercase text-white">
+                  {project.name}
+                </span>
+                <span className="text-[11px] text-gray-400 mt-1 font-mono tracking-wide">
+                  Visuel bientôt disponible
+                </span>
+              </div>
+            )}
           </div>
 
           {/* ACTION BUTTON (Centered perfectly in the notch space) */}
@@ -181,7 +187,7 @@ const Projets: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const cardsToShow = 3;
-  const maxIndex = projects.length - cardsToShow;
+  const maxIndex = Math.max(0, projects.length - cardsToShow);
   const titleReveal = useScrollReveal<HTMLDivElement>({ threshold: 0.3 });
   const carouselReveal = useScrollReveal<HTMLDivElement>({ threshold: 0.1 });
   const [openingProjectId, setOpeningProjectId] = useState<number | null>(null);
@@ -191,7 +197,7 @@ const Projets: React.FC = () => {
     
     // Wait for internal cards to fly up before showing overlay or redirecting
     setTimeout(() => {
-      // Sur mobile, après l'animation, on redirige directement
+      // Sur mobile, après l'animation, on redirige directement si un lien existe
       if (window.innerWidth < 768 && project.link) {
         setOpeningProjectId(null); // Remet la carte en place (si l'utilisateur revient en arrière)
         if (project.link.startsWith('/')) {
@@ -226,8 +232,6 @@ const Projets: React.FC = () => {
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
   }, [selectedProject, closeOverlay]);
-
-
 
   return (
     <div id="projets" className="min-h-screen bg-gray-50 py-32 px-10 flex flex-col items-center relative overflow-hidden">
@@ -273,22 +277,45 @@ const Projets: React.FC = () => {
           </div>
         </div>
 
-
       </div>
 
-      {/* CAROUSEL PAGINATION (Glass Pill Design) */}
-      <div className="hidden md:flex items-center gap-3 mt-16 bg-white py-4 px-6 rounded-full border border-gray-200 shadow">
-        {Array.from({ length: maxIndex + 1 }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`transition-all duration-300 ${
-              currentIndex === index 
-                ? "w-10 h-3 bg-[#FA8072] rounded-full" 
-                : "w-3 h-3 bg-gray-400 hover:bg-gray-600 rounded-full"
-            }`}
-          />
-        ))}
+      {/* CAROUSEL PAGINATION & NAVIGATION (Glass Pill Design) */}
+      <div className="hidden md:flex items-center gap-4 mt-16 bg-white py-3.5 px-6 rounded-full border border-gray-200 shadow-md">
+        <button
+          onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
+          disabled={currentIndex === 0}
+          className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 text-gray-700"
+          title="Précédent"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <div className="flex items-center gap-2.5">
+          {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`transition-all duration-300 ${
+                currentIndex === index 
+                  ? "w-8 h-2.5 bg-[#FA8072] rounded-full" 
+                  : "w-2.5 h-2.5 bg-gray-300 hover:bg-gray-500 rounded-full"
+              }`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => setCurrentIndex((prev) => Math.min(maxIndex, prev + 1))}
+          disabled={currentIndex >= maxIndex}
+          className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 text-gray-700"
+          title="Suivant"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
 
       {/* ===== PROJECT DETAIL OVERLAY ===== */}
@@ -398,12 +425,38 @@ const Projets: React.FC = () => {
                   </h2>
                 </div>
                 <div className="flex-1 px-6 pb-6">
-                  <SkeletonImage
-                    src={selectedProject.image}
-                    alt={selectedProject.name}
-                    wrapperClassName="w-full h-full rounded-[28px]"
-                    className="w-full h-full object-cover rounded-[28px] shadow-inner"
-                  />
+                  {selectedProject.image ? (
+                    <SkeletonImage
+                      src={selectedProject.image}
+                      alt={selectedProject.name}
+                      wrapperClassName="w-full h-full rounded-[28px]"
+                      className="w-full h-full object-cover rounded-[28px] shadow-inner"
+                    />
+                  ) : (
+                    <div className="w-full h-full min-h-[320px] bg-gradient-to-br from-[#1E2024] via-[#2A2B30] to-[#141518] rounded-[28px] flex flex-col items-center justify-center text-center p-8 text-white relative overflow-hidden border border-white/10 shadow-inner">
+                      <div className="w-20 h-20 rounded-3xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-4 border border-white/10 shadow-xl">
+                        {selectedProject.name.includes("CLINIQUE") ? (
+                          <span className="text-4xl">🏥</span>
+                        ) : selectedProject.name.includes("ACORP") ? (
+                          <span className="text-4xl">💻</span>
+                        ) : (
+                          <span className="text-4xl font-black text-[#FA8072]">
+                            {selectedProject.name.slice(0, 2)}
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="text-2xl font-black uppercase tracking-tight text-white mb-2">
+                        {selectedProject.name}
+                      </h3>
+                      <p className="text-sm text-gray-400 max-w-sm font-light mb-4">
+                        Capture d'écran & maquette en cours d'intégration.
+                      </p>
+                      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-[#FA8072]">
+                        <span className="w-2 h-2 rounded-full bg-[#FA8072] animate-pulse" />
+                        {selectedProject.role}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
