@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import SkeletonImage from './SkeletonImage';
 import projectImg from "../assets/student2.png";
 import projectImg1 from "../assets/genie5.png";
 import projectImg3 from "../assets/cinevibe.png";
@@ -37,26 +36,26 @@ const projects: ProjectData[] = [
   },
   {
     id: 3,
-    name: "CLINIQUE LIFE",
-    mission: "Digitalisation des services d'un établissement de santé pour optimiser l'expérience des patients et la gestion du personnel. Développement d'interfaces réactives et accessibles (prise de rendez-vous en ligne interactive), conception d'un tableau de bord (dashboard) d'administration complet pour piloter l'activité au quotidien, et optimisation des performances et de l'accessibilité.",
-    role: "Dev Front-End & Chef de Projet",
-    techStack: ["React", "Tailwind CSS", "TypeScript", "UX/UI Design"],
-  },
-  {
-    id: 4,
-    name: "ACORP GROUP",
-    mission: "Plateforme e-commerce moderne dédiée à la vente de matériel informatique et d'équipements technologiques, incluant un module de prise de rendez-vous en ligne pour les services de maintenance et de support technique.",
-    role: "Développeur Full-Stack",
-    techStack: ["React", "Tailwind CSS", "TypeScript", "Node.js"],
-  },
-  {
-    id: 5,
     name: "CINEVIBE",
     image: projectImg3,
     mission: "Développer CineVibe, une application mobile intuitive permettant de consulter les films à l'affiche et de réserver facilement des places de cinéma en temps réel.",
     role: "Développeur Front-End",
     techStack: ["Flutter"],
     link: "/cinevibe",
+  },
+  {
+    id: 4,
+    name: "CLINIQUE LIFE",
+    mission: "Digitalisation des services d'un établissement de santé pour optimiser l'expérience des patients et la gestion du personnel. Développement d'interfaces réactives et accessibles (prise de rendez-vous en ligne interactive), conception d'un tableau de bord (dashboard) d'administration complet pour piloter l'activité au quotidien, et optimisation des performances et de l'accessibilité.",
+    role: "Dev Front-End & Chef de Projet",
+    techStack: ["React", "Tailwind CSS", "TypeScript", "UX/UI Design"],
+  },
+  {
+    id: 5,
+    name: "ACORP GROUP",
+    mission: "Plateforme e-commerce moderne dédiée à la vente de matériel informatique et d'équipements technologiques, incluant un module de prise de rendez-vous en ligne pour les services de maintenance et de support technique.",
+    role: "Développeur Full-Stack",
+    techStack: ["React", "Tailwind CSS", "TypeScript", "Node.js"],
   },
 ];
 
@@ -126,10 +125,9 @@ const ProjectCard: React.FC<{ project: ProjectData; onOpen: (p: ProjectData) => 
             }}
           >
             {project.image ? (
-              <SkeletonImage
+              <img
                 src={project.image}
                 alt={project.name}
-                wrapperClassName="w-full h-full"
                 className="w-full h-full object-cover"
               />
             ) : (
@@ -426,10 +424,9 @@ const Projets: React.FC = () => {
                 </div>
                 <div className="flex-1 px-6 pb-6">
                   {selectedProject.image ? (
-                    <SkeletonImage
+                    <img
                       src={selectedProject.image}
                       alt={selectedProject.name}
-                      wrapperClassName="w-full h-full rounded-[28px]"
                       className="w-full h-full object-cover rounded-[28px] shadow-inner"
                     />
                   ) : (

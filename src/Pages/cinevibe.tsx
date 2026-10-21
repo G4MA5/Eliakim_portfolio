@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import SkeletonImage from '../Components/SkeletonImage';
 import cine1 from '../assets/cine1.png';
 import phone1 from '../assets/phone3.png';
 import phone2 from '../assets/phone4.png';
@@ -27,11 +26,10 @@ const Cinevibe: React.FC = () => {
             className="flex-1 flex flex-col md:items-start text-left px-8 md:px-12 lg:px-20 pt-10"
           >
             {/* Logo area */}
-            <SkeletonImage 
+            <img 
               src={cine1} 
               alt="Cinevibe Logo" 
-              wrapperClassName="w-[300px] mb-4" 
-              className="w-[300px] mix-blend-multiply" 
+              className="w-[300px] mb-4 mix-blend-multiply" 
             />
             <h2 className="text-2xl font-medium text-black mb-16">Application Mobile de Réservation</h2>
             
@@ -66,10 +64,9 @@ const Cinevibe: React.FC = () => {
             viewport={{ once: true }}
             className="flex-[1.1] flex justify-center md:justify-end md:pr-8"
           >
-            <SkeletonImage 
+            <img 
               src={phone1} 
               alt="Cinevibe Interface 1" 
-              wrapperClassName="w-full"
               className="w-full object-contain md:object-right block" 
             />
           </motion.div>
@@ -85,10 +82,9 @@ const Cinevibe: React.FC = () => {
             viewport={{ once: true }}
             className="flex-[1.5] flex justify-center md:justify-start px-8 md:pl-16 lg:pl-24"
           >
-            <SkeletonImage 
+            <img 
               src={phone2} 
               alt="Cinevibe Interface 2" 
-              wrapperClassName="w-full"
               className="w-full object-contain md:object-left block" 
             />
           </motion.div>
@@ -176,10 +172,9 @@ const Cinevibe: React.FC = () => {
         viewport={{ once: true }}
         className="w-full mt-32"
       >
-        <SkeletonImage 
+        <img 
           src={phone8} 
           alt="Cinevibe Full Showcase" 
-          wrapperClassName="w-full"
           className="w-full object-cover block" 
         />
       </motion.div>

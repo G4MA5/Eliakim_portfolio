@@ -1,5 +1,5 @@
 import React from 'react';
-import test1 from '../assets/Elia.png';
+import eliaImg from '../assets/Eliakim.jpg';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const SoftwareIcon: React.FC<{ label: string; sub: string; icon: React.ReactNode }> = ({ label, sub, icon }) => (
@@ -56,9 +56,9 @@ const Presentation: React.FC = () => {
               <div className="w-full max-w-[480px] aspect-[4/3] bg-white p-4 rounded-[40px] shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] border border-slate-100">
                 <div className="w-full h-full bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-[28px] overflow-hidden">
                   <img 
-                    src={test1} 
+                    src={eliaImg} 
                     alt="Assalé Yao Eliakim" 
-                    className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                    className="w-full h-full object-cover object-[center_10%] transition-all duration-700 hover:scale-105"
                   />
                 </div>
               </div>

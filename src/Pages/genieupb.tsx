@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SkeletonImage from '../Components/SkeletonImage';
 import G1Img from '../assets/G1.png';
 import G2Img from '../assets/G2.png';
 import G3Img from '../assets/G3.png';
@@ -18,10 +17,9 @@ const GenieUPB: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="w-full relative shadow-md overflow-hidden"
       >
-        <SkeletonImage 
+        <img 
           src={G1Img}
           alt="GenieUPB"
-          wrapperClassName="w-full"
           className="w-full h-auto object-cover block"
         />
       </motion.div>
@@ -37,10 +35,9 @@ const GenieUPB: React.FC = () => {
       <div className="w-full">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-            <SkeletonImage 
+            <img 
               src={G2Img} 
               alt="Résumé du projet" 
-              wrapperClassName="w-full h-full"
               className="w-full h-full object-cover block" 
             />
           </div>
@@ -64,10 +61,9 @@ const GenieUPB: React.FC = () => {
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-orange-50 opacity-70 blur-3xl"></div>
         <div className="flex flex-col md:flex-row-reverse relative z-10">
           <div className="w-full md:w-1/2">
-            <SkeletonImage 
+            <img 
               src={G3Img} 
               alt="Mon Rôle et Objectifs" 
-              wrapperClassName="w-full h-full shadow-lg"
               className="w-full h-full object-cover shadow-lg block" 
             />
           </div>
@@ -89,10 +85,9 @@ const GenieUPB: React.FC = () => {
       <div className="w-full">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-            <SkeletonImage 
+            <img 
               src={G4Img} 
               alt="Technologies et Outils utilisés" 
-              wrapperClassName="w-full h-full"
               className="w-full h-full object-cover block" 
             />
           </div>
@@ -119,10 +114,9 @@ const GenieUPB: React.FC = () => {
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-amber-100 opacity-60 blur-3xl"></div>
         <div className="flex flex-col md:flex-row-reverse relative z-10">
           <div className="w-full md:w-1/2">
-            <SkeletonImage 
+            <img 
               src={G5Img} 
               alt="Fonctionnalités clés et Défis techniques" 
-              wrapperClassName="w-full h-full"
               className="w-full h-full object-cover block" 
             />
           </div>
@@ -156,10 +150,9 @@ const GenieUPB: React.FC = () => {
 
       {/* G6 en plein écran tout en bas */}
       <div className="w-full">
-        <SkeletonImage 
+        <img 
           src={G6Img} 
           alt="Aperçu final de l'interface" 
-          wrapperClassName="w-full"
           className="w-full h-auto lg:h-screen object-cover block" 
         />
       </div>

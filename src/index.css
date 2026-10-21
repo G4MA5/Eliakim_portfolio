@@ -37,9 +37,3 @@ html {
     scrollbar-width: thin;
     scrollbar-color: #9ca3af #f3f4f6;
 }
-
-@keyframes shimmer {
-    100% {
-        transform: translateX(100%);
-    }
-}

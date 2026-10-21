@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SkeletonImage from './SkeletonImage';
 import genieImg from '../assets/Genie.png';
 
 const Majeur: React.FC = () => {
@@ -50,11 +49,10 @@ const Majeur: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex-1 w-full overflow-hidden rounded-[32px]"
           >
-            <SkeletonImage 
+            <img 
               src={genieImg} 
               alt="Genie UPB Project" 
-              wrapperClassName="w-full h-auto rounded-[32px] min-h-[220px]"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-[32px]"
             />
           </motion.div>
         </motion.div>
